@@ -4,7 +4,7 @@
             <header class="text-center mb-5 header-container">
                 <div class="logout-zone">
                     <button @click="handleLogout" class="logout-btn" title="Sign Out">
-                        <span>Sign Out</span>
+                        <span>Log Out</span>
                         <i class="fa-solid fa-right-from-bracket"></i>
                     </button>
                 </div>
