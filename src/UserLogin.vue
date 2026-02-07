@@ -2,12 +2,10 @@
   <div class="page-wrapper d-flex align-items-center justify-content-center">
     <div class="auth-card d-flex">
 
-      <!-- LEFT PANEL -->
       <div class="auth-left d-flex align-items-center justify-content-center">
         <img :src="goldImage" alt="Login" class="img-fluid" />
       </div>
 
-      <!-- RIGHT PANEL -->
       <div class="auth-right">
         <h4 class="text-center mb-4">
           LOGIN TO CALCULATE <br />YOUR GOLD PRICES
@@ -56,6 +54,9 @@ import goldImage from "@/assets/gold-img.avif";
 
 export default {
   name: "UserLogin",
+  mounted() {
+    document.title = "Login";
+  },
   data() {
     return {
       goldImage,
@@ -65,11 +66,9 @@ export default {
   },
   methods: {
     goToUserRegister() {
-      // Redirect to the register page
       this.$router.push({ name: "UserRegister" });
     },
     login() {
-      // Pure frontend redirect without backend
       this.$router.push({ name: "Calculator" });
     },
   },

@@ -2,12 +2,10 @@
   <div class="page-wrapper d-flex align-items-center justify-content-center">
     <div class="auth-card d-flex">
 
-      <!-- LEFT PANEL -->
       <div
         class="auth-left"
       ></div>
 
-      <!-- RIGHT PANEL -->
       <div class="auth-right">
         <h4 class="text-center mb-4">
           REGISTER TO CALCULATE <br />
@@ -91,6 +89,9 @@ import goldImage from "@/assets/gold-img.avif";
 
 export default {
   name: "UserRegister",
+  mounted() {
+    document.title = "Register";
+  },
    data() {
     return {
       goldImage,

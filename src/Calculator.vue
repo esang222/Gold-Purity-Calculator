@@ -51,6 +51,9 @@
 <script>
 export default {
     name: "GoldCalculator",
+    mounted() {
+    document.title = "Gold Purity Calculator";
+  },
     data() {
         const goldPurities = [6, 8, 10, 12, 14, 16, 18, 20, 21, 22, 24];
         const inputs = {};
